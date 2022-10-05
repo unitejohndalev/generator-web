@@ -7,14 +7,13 @@
 
 ::-webkit-scrollbar {
   display: none;
-  border:solid;
 }
 
 /* App.js CONTAINER */
 .mainApp-container {
   border: none;
   position: relative;
-  top: 10vw;
+  top: 2vw;
 }
 /* Meme.js */
 .meme-container {
@@ -186,7 +185,7 @@
   height: 10vw;
 }
 .quote--container {
-  height: 300px;
+
   font-family: "Montserrat", sans-serif;
 }
 
@@ -202,15 +201,14 @@
   font-weight: 900;
 }
 
-.quote-main {
-  height: 45vw;
-}
+
 
 /* QUOTE CONTAINER */
 .quotetxt-container {
   display: flex;
   margin-top: 1rem;
-  height: 15vh;
+
+  border: none;
 }
 
 .quotetxt-container > p:nth-child(1) {
@@ -224,7 +222,7 @@
 /* AUTHOR CONTAINER */
 .quoteAuthor-container {
   display: flex;
-  height: 5vh;
+
 }
 .quoteAuthor-container > p:nth-child(1) {
   width: 30%;
@@ -234,6 +232,11 @@
   width: 50%;
 }
 
+
+.quote-main {
+  border: none;
+
+}
 .quote-main > button {
   display: flex;
   margin-left: auto;
@@ -241,6 +244,7 @@
   border: none;
   background: #a98467;
   color: white;
+  margin-bottom: 1rem;
 }
 /* FOOTER */
 .quote-footer {
@@ -280,7 +284,6 @@
   top: 0;
   left: 32%;
   background: linear-gradient(to right, #1be600, 54%, #20bc32);
-
 }
 .FoodRecipe--container {
   border: none;
@@ -290,39 +293,38 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  height: 30vh;
   width: 100%;
 }
 
 .fr-img-container {
-  height: 30vh;
   width: 100%;
-  border: solid;
+}
+
+.fr-img-container > img {
+  width: 100%;
 }
 
 .fr-navbar {
-    padding: 1rem;
+  padding: 1rem;
   border-radius: 1rem 1rem 0 0;
   background: linear-gradient(to right, #1be600, 54%, #20bc32);
-
 }
 
 .fr-navbar > h1 {
-    text-align: center;
+  text-align: center;
   color: white;
   font-weight: 900;
 }
 .fr-footer {
-    padding: 1em;
-background: linear-gradient(to right, #1be600, 54%, #20bc32);
+  padding: 1em;
+  background: linear-gradient(to right, #1be600, 54%, #20bc32);
 
   border-radius: 0 0 1em 1em;
 }
 
 /* FIREBASE CRUD */
 .crud-container {
-    border: none;
+  border: none;
   display: flex;
   flex-direction: column;
   width: 80%;
@@ -340,7 +342,7 @@ background: linear-gradient(to right, #1be600, 54%, #20bc32);
   position: absolute;
   top: 0;
   left: 43%;
-  background: linear-gradient(to right, #95e600, 54%, #aad411)
+  background: linear-gradient(to right, #95e600, 54%, #aad411);
 }
 
 .crud--container {
@@ -361,20 +363,92 @@ background: linear-gradient(to right, #1be600, 54%, #20bc32);
 }
 
 .crud-navbar {
-    padding: 1rem;
+  padding: 1rem;
   border-radius: 1rem 1rem 0 0;
   background: linear-gradient(to right, #95e600, 54%, #aad411);
-
 }
 
 .crud-navbar > h1 {
-    text-align: center;
+  text-align: center;
   color: white;
   font-weight: 900;
 }
 .crud-footer {
-    padding: 1em;
-background: linear-gradient(to right, #95e600, 54%, #aad411);
+  padding: 1em;
+  background: linear-gradient(to right, #95e600, 54%, #aad411);
 
   border-radius: 0 0 1em 1em;
+}
+
+.mainApp--container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width:500px) {
+  .mainApp--container {
+    width: 100%;
+
+    max-width: 500px;
+    position: relative;
+    border: none;
+
+  }
+
+  /* MEME-SECTION */
+  .img--container {
+    width: 3.9em;
+    height: 3.9em;
+    position: absolute;
+    top: 0;
+    left: 10%;
+
+    
+  }
+
+  .meme-container {
+    border: none;
+    margin-top: 4rem;
+    
+  }
+
+  .img-container > img {
+    height: 60vh;
+  }
+
+  /* QUOTE-SECTION */
+  .quote-logo {
+    width: 3.9em;
+    height: 3.9em;
+    position: absolute;
+    left: 21.5%;
+  }
+
+  /* FOOD SECTION */
+  .FoodRecipe-logo {
+        width: 3.9em;
+    height: 3.9em;
+    position: absolute;
+    left: 33%;
+  }
+.FoodRecipe-container {
+  border: none;
+
+}
+
+
+  /* CRUD-SECTION */
+  .crud-logo {
+        width: 3.9em;
+    height: 3.9em;
+    position: absolute;
+    margin: 0;
+    left: 44.5%;
+ 
+  }
+  .crud-container {
+    border: none;
+    
+  }
+
 }

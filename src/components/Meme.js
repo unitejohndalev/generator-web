@@ -62,7 +62,7 @@ export default function Meme(props) {
 
   return (
     <div className="meme-container">
-      <div ref={memeRef} class="meme---container">
+      <div ref={memeRef} className="meme---container">
         <button className="img--container" onClick={toggle}>
           {/* <img src={props.meme.imgSrc} /> */}
         </button>

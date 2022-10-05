@@ -1,6 +1,7 @@
-export default [
+export default 
   {
-    bbqs: [
+    "data":{
+    "bbqs": [
       {
         id: "ribs-brisket-and-burnt-ends",
         img: "https://goldbelly.imgix.net/uploads/showcase_media_asset/image/79619/joes-kc-ribs-brisket-and-burnt-ends.6710e994980e485e6441b794717ad6fb.jpg?ixlib=react-9.0.2&auto=format&ar=1%3A1",
@@ -13125,22 +13126,5 @@ export default [
         country: "Calumet City, IL",
       },
     ],
-    pagination: {
-      bbqs: 59,
-      "best-foods": 60,
-      breads: 58,
-      burgers: 60,
-      chocolates: 59,
-      desserts: 43,
-      drinks: 48,
-      "fried-chicken": 58,
-      "ice-cream": 27,
-      pizzas: 54,
-      porks: 60,
-      sandwiches: 55,
-      sausages: 60,
-      steaks: 57,
-      "our-foods": 697,
-    },
-  },
-];
+  }
+  }

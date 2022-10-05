@@ -28,7 +28,8 @@ export default function App() {
   const meme = memeData.map((meme) => {
     return (
       <div className="mainApp-container">
-        <Meme meme={meme} />
+        <Meme meme={meme} 
+              />
 
         <Quotes />
 
@@ -51,5 +52,5 @@ export default function App() {
       </div>
     );
   });
-  return <div>{meme}</div>;
+  return <div className="mainApp--container">{meme}</div>;
 }
