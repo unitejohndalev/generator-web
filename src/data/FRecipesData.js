@@ -408,15 +408,6 @@ export default
         country: "Kansas City, MO",
       },
       {
-        id: "barbeque-assortment-for-12-16",
-        img: "https://goldbelly.imgix.net/uploads/showcase_media_asset/image/132527/barbeque-feast-for-8-12.33d57b4d33aee93b40c12c876061b0a6.jpg?ixlib=react-9.0.2&auto=format&ar=1%3A1",
-        name: "Arthur Bryant's Barbeque",
-        dsc: "Barbeque Sampler for 12-16",
-        price: 239,
-        rate: 5,
-        country: "Kansas City, MO",
-      },
-      {
         id: "half-pit-smoked-pastrami-brisket-3-lbs",
         img: "https://goldbelly.imgix.net/uploads/showcase_media_asset/image/101803/half-pit-smoked-pastrami-brisket-3-lbs.46a73b67344b4c19a012476ef4937ffd.jpg?ixlib=react-9.0.2&auto=format&ar=1%3A1",
         name: "Ugly Drum",
@@ -7283,15 +7274,6 @@ export default
         price: 119,
         rate: 4,
         country: "New York, NY",
-      },
-      {
-        id: "barbeque-assortment-for-12-16",
-        img: "https://goldbelly.imgix.net/uploads/showcase_media_asset/image/132527/barbeque-feast-for-8-12.33d57b4d33aee93b40c12c876061b0a6.jpg?ixlib=react-9.0.2&auto=format&ar=1%3A1",
-        name: "Arthur Bryant's Barbeque",
-        dsc: "Barbeque Sampler for 12-16",
-        price: 239,
-        rate: 5,
-        country: "Kansas City, MO",
       },
       {
         id: "the-presidential-smoked-meat-sampler",

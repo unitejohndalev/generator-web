@@ -5,9 +5,18 @@
   font-family: "Montserrat", sans-serif;
 }
 
+body {
+background: radial-gradient(circle at left top, #6860d7 , #91da72);
+
+
+  height: 100vh;
+}
+
 ::-webkit-scrollbar {
   display: none;
 }
+
+
 
 /* App.js CONTAINER */
 .mainApp-container {
@@ -33,11 +42,15 @@
   justify-content: center;
   align-items: center;
   box-shadow: 1px 1px 5px rgb(12 6 6/0.5);
-  background: linear-gradient(to right, #1b00e6, 28%, #001eff);
+  background: rgba(2, 48, 255, 0.699);
+  backdrop-filter: blur(1.7px);
+  -webkit-backdrop-filter: blur(1.7px);
+  border: 1px solid rgba(59, 2, 255, 0.21);
 }
 
 .img--container:active {
-  background: rgb(207, 197, 197);
+  background: rgba(59, 2, 255, 0.7);
+
 }
 
 .meme--container {
@@ -48,8 +61,13 @@
 
 .meme--container > nav {
   padding: 1rem;
-  background: linear-gradient(to right, #1b00e6, 28%, #001eff);
   border-radius: 1rem 1rem 0 0;
+  background: rgba(59, 2, 255, 0.47);
+
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1.7px);
+  -webkit-backdrop-filter: blur(1.7px);
+  border: 1px solid rgba(59, 2, 255, 0.21);
 }
 .meme--container > nav h1 {
   text-align: center;
@@ -93,11 +111,17 @@
 .btn-container > button {
   width: 80%;
   padding: 0.524em;
-  background: linear-gradient(to right, #4d38eb, 64%, #6a42c9);
+
   font-weight: 700;
   color: white;
   font-size: 0.9em;
   border: none;
+  background: rgba(59, 2, 255, 0.47);
+
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1.7px);
+  -webkit-backdrop-filter: blur(1.7px);
+  border: 1px solid rgba(59, 2, 255, 0.21);
 }
 
 .img-container {
@@ -145,13 +169,18 @@
   height: 80vw;
   /* box-shadow: 1px 1px 5px black; */
   border-radius: 0.125rem;
-  margin-bottom: 0.1rem;
+  margin-bottom: 1rem;
 }
 
 /* MEME FOOTER SECTION */
 .meme-footer {
   padding: 1em;
-  background: linear-gradient(to right, #1b00e6, 28%, #001eff);
+  background: rgba(59, 2, 255, 0.47);
+
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1.7px);
+  -webkit-backdrop-filter: blur(1.7px);
+  border: 1px solid rgba(59, 2, 255, 0.21);
   border-radius: 0 0 1em 1em;
 }
 
@@ -175,17 +204,18 @@
   top: 0;
   left: 21%;
   background: #a98467;
+  opacity: .8;
+
 }
 
 .quote-logo:active {
-  background: rgb(207, 197, 197);
+  background: rgb(207 197 197 / .5);
 }
 .quote-logo > img {
   width: 10vw;
   height: 10vw;
 }
 .quote--container {
-
   font-family: "Montserrat", sans-serif;
 }
 
@@ -193,6 +223,8 @@
   background: #a98467;
   padding: 1rem;
   border-radius: 1rem 1rem 0 0;
+  opacity: .8;
+
 }
 
 .quote-navbar > h1 {
@@ -201,14 +233,11 @@
   font-weight: 900;
 }
 
-
-
 /* QUOTE CONTAINER */
 .quotetxt-container {
   display: flex;
   margin-top: 1rem;
-
-  border: none;
+  height: 50%;
 }
 
 .quotetxt-container > p:nth-child(1) {
@@ -223,19 +252,18 @@
 .quoteAuthor-container {
   display: flex;
 
+  height: 3rem;
 }
 .quoteAuthor-container > p:nth-child(1) {
   width: 30%;
 }
 
 .quoteAuthor-container > p:nth-child(2) {
-  width: 50%;
+  width: 80%;
 }
 
-
 .quote-main {
-  border: none;
-
+  height: 40vh;
 }
 .quote-main > button {
   display: flex;
@@ -245,12 +273,16 @@
   background: #a98467;
   color: white;
   margin-bottom: 1rem;
+  opacity: .8;
+
 }
 /* FOOTER */
 .quote-footer {
   padding: 1em;
   background: #a98467;
   border-radius: 0 0 1em 1em;
+  opacity: .8;
+
 }
 
 /* .quote-main > p:nth-child(1),
@@ -282,11 +314,19 @@
   align-items: center;
   position: absolute;
   top: 0;
-  left: 32%;
+  left: 32.5%;
   background: linear-gradient(to right, #1be600, 54%, #20bc32);
+  opacity: .8;
+
 }
 .FoodRecipe--container {
   border: none;
+}
+
+.FoodRecipe-logo:active {
+  background: linear-gradient(to right, #1be600, 54%, #20bc32);
+  opacity: .5;
+
 }
 
 .fr-container {
@@ -296,18 +336,37 @@
   width: 100%;
 }
 
+.fr-container > button {
+  padding: 0.546rem;
+  margin: 0.5rem 0;
+  margin-left: auto;
+  border: none;
+  background: #1be600;
+  color: white;
+  opacity: .8;
+
+}
+
 .fr-img-container {
   width: 100%;
 }
 
 .fr-img-container > img {
   width: 100%;
+  margin: 0 0 0.5rem 0;
+}
+.fr-img-container > p {
+  text-align: center;
+  margin-top: 1rem;
+  height: 3rem;
 }
 
 .fr-navbar {
   padding: 1rem;
   border-radius: 1rem 1rem 0 0;
   background: linear-gradient(to right, #1be600, 54%, #20bc32);
+  opacity: .8;
+
 }
 
 .fr-navbar > h1 {
@@ -320,9 +379,11 @@
   background: linear-gradient(to right, #1be600, 54%, #20bc32);
 
   border-radius: 0 0 1em 1em;
+  opacity: .8;
+
 }
 
-/* FIREBASE CRUD */
+/* FIREBASE CRUD
 .crud-container {
   border: none;
   display: flex;
@@ -378,21 +439,22 @@
   background: linear-gradient(to right, #95e600, 54%, #aad411);
 
   border-radius: 0 0 1em 1em;
-}
+} */
 
 .mainApp--container {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
-@media (min-width:500px) {
+
+/* DESKTOP */
+@media (min-width: 500px) {
   .mainApp--container {
     width: 100%;
-
     max-width: 500px;
     position: relative;
     border: none;
-
+    margin: 0 auto;
   }
 
   /* MEME-SECTION */
@@ -402,18 +464,15 @@
     position: absolute;
     top: 0;
     left: 10%;
-
-    
   }
 
   .meme-container {
     border: none;
     margin-top: 4rem;
-    
   }
 
   .img-container > img {
-    height: 60vh;
+    height: 50vh;
   }
 
   /* QUOTE-SECTION */
@@ -426,18 +485,16 @@
 
   /* FOOD SECTION */
   .FoodRecipe-logo {
-        width: 3.9em;
+    width: 3.9em;
     height: 3.9em;
     position: absolute;
-    left: 33%;
+    left: 33.5%;
   }
-.FoodRecipe-container {
-  border: none;
+  .FoodRecipe-container {
+    border: none;
+  }
 
-}
-
-
-  /* CRUD-SECTION */
+  /* CRUD-SECTION
   .crud-logo {
         width: 3.9em;
     height: 3.9em;
@@ -449,6 +506,5 @@
   .crud-container {
     border: none;
     
-  }
-
+  } */
 }

@@ -27,7 +27,7 @@ export default function FoodRecipe() {
   const [recipeImage, setRecipeImage] = useState({
     randomImage:
       "https://goldbelly.imgix.net/uploads/showcase_media_asset/image/66752/carolina-bbq-oink-sampler.1340b5a10cedc238cb2280306dd1d5a5.jpg?ixlib=react-9.0.2&auto=format&ar=1%3A1",
-      foodName:"Texas Specialty"
+      foodName:"Texas Specialty Grilled Beef"
   
     });
 
@@ -58,11 +58,11 @@ export default function FoodRecipe() {
             {secondShow && (
               <main className="fr-container">
                 <div className="fr-container">
-                  <button onClick={getFoodImage}>GENERATE</button>
                   <div className="fr-img-container">
-                    <img src={recipeImage.randomImage} />
                     <p>{recipeImage.foodName}</p>
+                    <img src={recipeImage.randomImage} />
                   </div>
+                  <button onClick={getFoodImage}>GENERATE</button>
                 </div>
               </main>
             )}
