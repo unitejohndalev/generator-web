@@ -1,3 +1,3 @@
 My-first-react-PROJECT
 
-With CRUD Firebase
+Using API for generating random data.
